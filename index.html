@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="css/style.css">
+<title>Pranjal Gupta</title>
+
+<!-- adding Google Icons-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+</script>
+
+<!-- For Font Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+													<div id="Sidenav">
+													  <div class="toggle-btn" onclick="openNav()">
+													  <span></span>
+													  <span></span>
+													  <span></span>
+													  </div>
+													  <div class="sidenav" id="navibar">
+													  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+													  <a href="#">Home</a>
+													  <a href="AboutMe.html">About Me</a>
+													  <a href="Resume/ResumePranjal.pdf">Resume</a>
+													  <a href="project.html">My Projects</a>
+													  <a href="coming_soon.html">My Galleria</a>
+													  <a href="coming_soon.html">Contact Me</a>
+													  </div>
+													</div>
+
+<header class="v-header container">
+	<div class="fullscreen-video-wrap">
+		<video src="bgvideo/citylights.mp4" autoplay="true" loop="true"></video>
+	</div>
+	<div class="header-overlay"></div>
+	<div class="header-content">
+		<h1>Hye , Hello Everyone I am <b id="myname">Pranjal	</b><img src="images/dp.jpg" alt="Pranjal's DP" /> </h1>
+		<p style="color:black;font-size:20px"><b> A Student, currently CS Grad'..!! </b></p>
+		<a href="#" class="btn">Click To Explore..</a>
+	</div>
+</header>
+
+<section class="section section-a">
+								<div align="center">
+									<p>
+									<blockquote>
+									<p>Always Remember....!!</p>
+									<code><mark>Trust the wait.</mark>
+									<br><mark>Embrace the uncertainity.</mark>
+									<br><mark>Enjoy the beauty of becoming.</mark>
+									<br><mark>When nothing is certain, anything is possible.</mark></code>
+									<footer>mind set of greatness <i class="material-icons">local_florist</i></footer>
+									</blockquote>
+									</p>
+								</div>
+</section>
+
+  <section class="section section-b">
+    <div class="container">
+							<h2 style="color:black"><b>Hey, Got Some <i class="material-icons">watch</i></b></h2>
+
+		<div class="rows">
+			<div>
+			<div class="columns">
+			<div>
+			<a href="http://www.youtube.com/embed/m0hqBIugr7I"><i class="fa fa-youtube-play" style="font-size:36px"></i>
+			<!-- <i class="fa fa-youtube" style="font-size:36px; color:Black;"></i> --></a>
+			</div>
+			</div>
+			</div>
+
+			<div><p style="color:black;"><b>Have A Look</b></p></div>
+		  </div>
+
+    </div>
+  </section>
+
+  <section class="section section-c">
+		<div class="container_p3">
+
+					<div id="map"></div>
+					<script>
+					  function initMap() {
+						var uluru = {lat: 28.6812, lng: 77.5090};
+						var map = new google.maps.Map(document.getElementById('map'), {
+						  zoom: 10,
+						  center: uluru
+						});
+						var marker = new google.maps.Marker({
+						  position: uluru,
+						  map: map
+						});
+					  }
+					</script>
+					<script async defer
+					src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPkIwe9UXVtzBGDrmdR9G3CRJQ_vUbaoE&callback=initMap">
+					</script>
+
+	    </div>
+
+  </section>
+
+
+<script>
+function openNav() {
+    document.getElementById("navibar").style.width = "150px";
+}
+
+function closeNav() {
+    document.getElementById("navibar").style.width = "0";
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Abandoned~~~~~~~~~~~~~~~~~~~~~~~~~~~
+function clickiconabove(){
+alert("Hye Could You click Just the HD Icon above to View the Video");
+}*/
+
+</script>
+</body>
+<footer align="center" style="background:#A56C3F;; font-size:16px; margin-top:0px;">
+					<div id="part2">
+					<a href="https://www.linkedin.com/in/pranjal-gupta-92bb3811b/" class="fa fa-linkedin"></a>
+					<a href="https://github.com/PranjalGupta3105" class="fa fa-github"></a>
+					<a href="https://www.quora.com/profile/Pranjal-Gupta-85" class="fa fa-quora"></a>
+					<a href="#" class="fa fa-google"></a>
+					<a href="https://www.facebook.com/pranjal.gupta.568294" class="fa fa-facebook"></a>
+					<a href="https://twitter.com/Pranjal77501828" class="fa fa-twitter"></a>
+					<a href="https://www.instagram.com/pranjal_gupta95/" class="fa fa-instagram"></a>
+					<a href="https://soundcloud.com/pranjal-gupta-892824631" class="fa fa-soundcloud"></a>
+					</div>
+					<div align="center"><b><i>&copy;</i> 2017 Pranjal Gupta . All Rights Reserved</b></div>
+</footer>
+</html>
